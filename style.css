@@ -1,0 +1,24 @@
+/*Variables*/
+:root{
+    --bord: lightslategrey solid 2px;
+    --size: 200px;
+    --marge:0px;
+}
+/*Boxes*/
+.empty{
+    background-color: whitesmoke;
+}
+.full {
+    background-color: rgb(42, 245, 177);
+}
+
+/*For common stuff*/
+.full, .empty{
+    border:var(--bord);
+    height: var(--size);
+    width: var(--size);
+    padding: var(--marge);
+    padding: var(--marge);
+}
+
+/*Faire les animations en JS pour pouvoir faire des conditions ?*/
