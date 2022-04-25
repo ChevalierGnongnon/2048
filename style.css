@@ -1,57 +1,15 @@
-:root{
-    --bord: lightslategrey solid 2px;
-    --size: 24%;
-    --marge:0px;
-    --backColor:rgb(15, 13, 36);  
-}
-/*Boxes*/
-.empty{
-    background-color: whitesmoke;
-    border-radius: 10px;
-}
-.full {
-    background-color: rgb(42, 245, 177);
-}
-
-.full, .empty{
-    border:var(--bord);
-    height: var(--size);
-    width: var(--size);
-    padding: var(--marge);
-    margin: var(--marge);
-}
-/*For the game*/
-section{
+.grid{
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
     flex-wrap: wrap;
-    width: 900px;
-    height: 900px;
-    margin:auto;
-    gap: 5px;
-    background-color: var(--backColor);   
-    padding:10px;
-    border: grey solid 2px;
-    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
 }
-/*Explainations, options*/
-.options{
-    background-color: var(--backColor);
-    height:35px;
-    width:104px
+.grid div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
 }
-.rules{
-    background-color: var(--backColor);
-    color: white;
-    width: 104px;
-    float: left;
-}
-
-.options, .rules{
-    margin: 5px;
-    border:2px solid grey;
-    border-radius: 10px;
-}
-
-/*Faire les animations en JS pour pouvoir faire des conditions ?*/

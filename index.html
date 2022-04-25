@@ -5,26 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="app.js" charset="utf-8"></script>
     <title>2048</title>
 </head>
 <body>
-    <h1 class="titre">Bienvenue !!! <br>Essayez d'atteindre le 2048.</h1>
-    <fieldset class="rules">
-        <p class="txtRegles">A chaque tour, une case de la grille est remplie avec un chiffre (2 ou 4). 
-            Le joueur peut alors décider de déplacer les cases soit vers le haut, le bas, la gauche ou la droite. 
-            Si deux cases adjacentes sont déplacées dans le même sens et portent un nombre identiques, elles sont additionnées.
-        </p>
-    </fieldset> <br>
-    <fieldset class="options">
-        <button class="reset">Recommencer</button><br>
-        <button class="backOnce">Retour arrière</button>
-    </fieldset>
-    <section>
-        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-    </section>
+    <div class="score-container">
+        <div class="score-title">score</div>
+        <span id="score">0</span>
+    </div>
+    <div id="result"></div>
+    <div class="grid"></div>
 </body>
 </html>
